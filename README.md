@@ -88,7 +88,7 @@ SHAP dropped: `month_jan`, `month_nov`, `month_oct`
 ## Quick Start
 
 ```bash
-git clone https://github.com/liyana-muskan/Wildfire-Burned-Area-Regression.git
+git clone https://github.com/saberabanu0001/Wildfire-Burned-Area-Regression.git
 cd wildfire
 
 python -m venv .venv
@@ -140,7 +140,7 @@ wildfire/
 ## Google Colab
 
 ```python
-!git clone https://github.com/liyana-muskan/Wildfire-Burned-Area-Regression.git
+!git clone https://github.com/saberabanu0001/Wildfire-Burned-Area-Regression.git
 %cd wildfire
 !pip install -r requirements.txt
 !python run_pipeline.py
