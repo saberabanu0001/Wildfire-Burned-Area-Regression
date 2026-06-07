@@ -1,0 +1,49 @@
+seed: 42
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+
+target_col: area
+log_target: true
+
+categorical_cols:
+  - month
+  - day
+
+numerical_cols:
+  - X
+  - Y
+  - FFMC
+  - DMC
+  - DC
+  - ISI
+  - temp
+  - RH
+  - wind
+  - rain
+
+shap_drop_n: 3
+
+baseline:
+  hidden1: 64
+  hidden2: 32
+  dropout: 0.1
+  lr: 0.001
+  batch_size: 32
+  max_epochs: 200
+  patience: 15
+
+pso:
+  n_particles: 10
+  n_iterations: 20
+  inner_epochs: 50
+  lr_bounds: [0.0001, 0.01]
+  hidden_bounds: [32, 128]
+  dropout_bounds: [0.0, 0.4]
+
+paths:
+  raw_data: data/forestfires.csv
+  processed_dir: data/processed
+  artifacts: artifacts
